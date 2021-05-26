@@ -13,10 +13,19 @@ def summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(planeteer_calls)
+<<<<<<< HEAD
   if planeteer_calls.all? { |call| call.length < 5 }
     return false 
   else 
     return true 
+=======
+  planeteer_calls.each do |call| 
+    if call.length > 4
+      true 
+    else
+      false 
+    end
+>>>>>>> b9bd696b4ac0a81c5842835c949652263393303d
   end
 end
 
